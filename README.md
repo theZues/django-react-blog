@@ -1,7 +1,6 @@
-# Reactify Django
+# Django-React-Blog
 
-React is a powerful component JavaScript library. With it, you can build all kinds of user inferfaces from something as simple as a contact form all the way to an entire front end.
-
+For the final GA project, I chose to do Python, Django, and React.  
 This project is about integrating React with Django.
 
 #### Tech
