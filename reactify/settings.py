@@ -61,7 +61,7 @@ ROOT_URLCONF = 'reactify.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'DIRS': [os.path.join(BASE_DIR, 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -128,8 +128,8 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.0/howto/static-files/
 
-# STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR), 'static-cdn-local')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles', 'build')
+# STATIC_ROOT = os.path.join(os.path.dirname(BASE_DIR, 'static-cdn-local', 'build')
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [
@@ -137,7 +137,7 @@ STATICFILES_DIRS = [
 ]
 
 
-# STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
+STATICFILES_STORAGE = 'whitenoise.django.GzipManifestStaticFilesStorage'
 
 
 CORS_URLS_REGEX = r'^/api.*'
