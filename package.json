@@ -8,6 +8,7 @@
     "react-cookies": "^0.1.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
+    "serve": "^11.3.0",
     "whatwg-fetch": "^3.0.0"
   },
   "devDependencies": {
@@ -31,6 +32,7 @@
     "copy-build-css": "copyfiles -f 'build/static/css/*.css' '../staticfiles/css/'",
     "collectstatic": "python ../manage.py collectstatic --no-input"
   },
-
-  "engines": {"node" : "12.14.1"}
+  "engines": {
+    "node": "12.14.1"
+  }
 }
